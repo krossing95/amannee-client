@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+::selection{
+  color: #ffffff;
+  background: #FF3494;
+}
+.navbar-static-top{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+.col-md-3, col-sm-4{
+  margin-bottom: 20px;
+}
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.backdrop div{
+  display: block;
+  max-width: 60%;
+  max-height: 60%;
+  margin: 60px auto;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  background: #ffffffde;
+  border-radius: 6px;
+  padding: 20px;
+}
+.backdrop div li{
+  text-align: center;
+}
+a{
+  color: #272626 !important;
+}
+a:hover{
+  color: #0e0d0d ;
+}
+.dashboard-thumb{
+  background: #ffffffde;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 6px;
+}
+.content-card{
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  overflow: hidden;
+  height: 100%;
+  width: 30%;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+.content-card img{
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+@keyframes focusInputField {
+  0% {
+      border-bottom: 1px solid #0f1316;
+      width: 80%;
+  }
+  100% {
+      border-bottom: 1px solid #c03d7a;
+      width: 85%;
+  }
+}
+.form-controller{
+  border: none;
+  padding: 10px 10px;
+  outline: none;
+  border-bottom: 1px solid #0f1316;
+  width: 40%;
+  text-align: start;
+  background: none;
+  margin-bottom: 23px;
+  font-size: medium;
+}
+.form-controller:focus{
+  animation: .5s ease focusInputField;
+  border: none;
+  padding: 10px 10px;
+  outline: none;
+  border-bottom: 1px solid #c03d7a;
+  width: 45%;
+}
+.center-img{
+  height: 0vh !important;
+}
+.search-toggle{
+  display: none;
+  background: none;
+  border-style: none;
+  border: none;
+  padding-top: 13px;
+}
+.refresh-btn{
+  border-style: none;
+  color: #ffffff;
+  background: #FF3494;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: medium;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 992px) {
+  .content-card{
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+    padding: 15px;
+  }
+  .form-controller{
+    width: 80%;
+  }
+  .form-controller:focus{
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .search-toggle{
+    display: block !important;
+  }
+  .content-card{
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+  }
+}
+footer{
+  background: transparent linear-gradient(90deg, #7D4196 0%, #FF3494 100%) 0% 0% no-repeat padding-box;
+  bottom: 0 !important;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+footer h6{
+  color: #ffffff;
+}
+.operationEditBtn, .operationTrashBtn {
+  border: none;
+  background: none;
+}
+.operationEditBtn{
+  color: rgba(22, 149, 22, 0.794);
+  font-size: 17px;
+  margin-right: 20px;
+}
+.operationTrashBtn {
+  color: #FF3494;
+  font-size: 17px;
+}
+.scrollable{
+  overflow-y: scroll;
+}
+.search-btn{
+  margin-right: 10px;
+}
